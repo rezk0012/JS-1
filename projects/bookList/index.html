@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="">
+    <title>BookDB | v1</title>
+</head>
+
+<body>
+    <div class="container mt-4 ">
+
+        <h1 class="display-4 mb-5 text-center font-weight-bold">
+            <img src="img/logo.webp" width="90" alt=""> Book<span class="text-primary">DB</span>
+        </h1>
+
+        <div class="card shadow" id="add-book">
+            <h5 class="card-title text-center bg-primary text-light p-2 font-weight-bold"> ADD BOOK </h5>
+            <div class="card-body">
+                <form id="book-form">
+                    <div class="form-group">
+                        <input type="text" id="title" class="my-2 form-control" placeholder="Title">
+                        <input type="text" id="author" class=" my-2 form-control" placeholder="Author">
+                        <input type="text" id="isbn" class=" my-2 form-control" placeholder="ISBN">
+                        <input type="submit" value="ADD" class="btn btn-primary btn-block">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="card mt-5 shadow">
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th>Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
